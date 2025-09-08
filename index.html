@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grill It - Trova il posto perfetto per il tuo barbecue</title>
+    <meta name="description" content="L'app per scoprire i migliori luoghi per barbecue in Italia. Trova parchi, aree attrezzate e luoghi perfetti per grigliare con amici e famiglia.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home">
+                <div class="nav-logo">
+                    <img src="img/grill_it.svg" alt="Grill It Logo" class="logo">
+                    <span class="logo-text">Grill It</span>
+                </div>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Funzionalità</a>
+                <a href="#screenshots" class="nav-link">Screenshots</a>
+                <a href="#download" class="nav-link">Download</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Trova il <br>
+                        <span class="highlight"><span id="typing-text"></span><span class="cursor">|</span></span><br>
+                        per il tuo barbecue
+                    </h1>
+                    <p class="hero-description">
+                        Scopri i migliori luoghi per organizzare barbecue in Italia. 
+                        Parchi attrezzati, aree picnic e molto altro, tutto a portata di tap.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16L7 11H10V4H14V11H17L12 16Z" fill="currentColor"/>
+                                <path d="M20 18H4V20H20V18Z" fill="currentColor"/>
+                            </svg>
+                            Scarica Gratis
+                        </a>
+                        <a href="#features" class="btn btn-secondary">
+                            Scopri di più
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/home.jpg" alt="Grill It App Screenshot" class="phone-mockup">
+                    <div class="floating-card card-1">
+                        <div class="card-icon">🔍</div>
+                        <div class="card-text">Ricerca intelligente</div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-icon">📍</div>
+                        <div class="card-text">GPS integrato</div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <div class="card-icon">⭐</div>
+                        <div class="card-text">Salva i preferiti</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Funzionalità principali</h2>
+                <p class="section-subtitle">
+                    Tutto quello che ti serve per organizzare il barbecue perfetto
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Geolocalizzazione</h3>
+                    <p class="feature-description">
+                        Trova facilmente luoghi per barbecue vicino a te o in qualsiasi zona d'Italia utilizzando il GPS integrato.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Filtri avanzati</h3>
+                    <p class="feature-description">
+                        Filtra per tipologia di luogo, servizi disponibili, costi e molto altro per trovare il posto ideale.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Lista preferiti</h3>
+                    <p class="feature-description">
+                        Salva i tuoi luoghi preferiti per trovarli facilmente e pianificare i tuoi prossimi barbecue.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Informazioni dettagliate</h3>
+                    <p class="feature-description">
+                        Scopri servizi disponibili, prezzi, orari e tutte le informazioni utili per ogni location.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M687.542857 965.485714H182.857143c-87.771429 0-160.914286-73.142857-160.914286-160.914285V256c0-87.771429 73.142857-160.914286 160.914286-160.914286h336.457143V146.285714H182.857143C124.342857 146.285714 73.142857 197.485714 73.142857 256v541.257143c0 58.514286 51.2 109.714286 109.714286 109.714286h504.685714c58.514286 0 109.714286-51.2 109.714286-109.714286V533.942857h58.514286v263.314286c-7.314286 95.085714-80.457143 168.228571-168.228572 168.228571z" fill="#ffffff"></path><path d="M877.714286 95.085714l109.714285 138.971429c7.314286 7.314286 0 14.628571-7.314285 21.942857L629.028571 526.628571c-7.314286 7.314286-160.914286-7.314286-160.914285-7.314285s29.257143-146.285714 36.571428-153.6l351.085715-270.628572c7.314286-7.314286 14.628571-7.314286 21.942857 0z" fill="#ffffff"></path><path d="M607.085714 555.885714c-21.942857 0-65.828571 0-138.971428-7.314285H438.857143V512c29.257143-160.914286 36.571429-160.914286 43.885714-168.228571L833.828571 73.142857c21.942857-14.628571 43.885714-14.628571 58.514286 7.314286L1002.057143 219.428571c14.628571 14.628571 7.314286 43.885714-7.314286 58.514286L643.657143 548.571429c-7.314286 7.314286-7.314286 7.314286-36.571429 7.314285z m-109.714285-58.514285c51.2 0 95.085714 7.314286 117.028571 7.314285L950.857143 241.371429l-87.771429-117.028572-336.457143 263.314286c-7.314286 14.628571-14.628571 58.514286-29.257142 109.714286z" fill="#ffffff"></path></g></svg>
+                    </div>
+                    <h3 class="feature-title">Report e segnalazioni</h3>
+                    <p class="feature-description">
+                        Segnala problemi o suggerisci nuove location per migliorare continuamente l'app.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" id="meteor-icon-kit__solid-language" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 7H21C22.6569 7 24 8.34315 24 10V21C24 22.6569 22.6569 24 21 24H13C11.3431 24 10 22.6569 10 21V17H3C1.34315 17 0 15.6569 0 14V3C0 1.34315 1.34315 0 3 0H11C12.6569 0 14 1.34315 14 3V7ZM14 9V11H16C16 10.4477 16.4477 10 17 10C17.5523 10 18 10.4477 18 11H18.9794C18.9924 10.9997 19.0054 10.9997 19.0185 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H19.7985C19.4241 14.4757 18.8531 15.8257 18.0876 17.0466C18.7882 17.8313 19.6099 18.538 20.5548 19.1679C21.0143 19.4743 21.1385 20.0952 20.8322 20.5547C20.5258 21.0142 19.9049 21.1384 19.4454 20.8321C18.4832 20.1906 17.6268 19.4745 16.8773 18.6846C16.2131 19.4542 15.4538 20.1597 14.6 20.8C14.1582 21.1314 13.5314 21.0418 13.2 20.6C12.8686 20.1582 12.9582 19.5314 13.4 19.2C14.2377 18.5717 14.9675 17.8745 15.5904 17.1065C15.2236 16.5795 14.8952 16.0263 14.6057 15.4472C14.3587 14.9532 14.5589 14.3526 15.0529 14.1056C15.5469 13.8586 16.1476 14.0588 16.3945 14.5528C16.5199 14.8035 16.6538 15.0485 16.7962 15.2878C17.1768 14.5736 17.4863 13.8113 17.7253 13H14V14C14 15.3062 13.1652 16.4175 12 16.8293V21C12 21.5523 12.4477 22 13 22H21C21.5523 22 22 21.5523 22 21V10C22 9.44771 21.5523 9 21 9H14ZM6.22076 9.5L7 7.16228L7.77924 9.5H6.22076ZM5.55409 11.5H8.44591L9.05132 13.3162C9.22596 13.8402 9.79228 14.1233 10.3162 13.9487C10.8402 13.774 11.1233 13.2077 10.9487 12.6838L7.94868 3.68377C7.64478 2.77208 6.35522 2.77208 6.05132 3.68377L3.05132 12.6838C2.87667 13.2077 3.15983 13.774 3.68377 13.9487C4.20772 14.1233 4.77404 13.8402 4.94868 13.3162L5.55409 11.5Z" fill="#ffffff"></path></g></svg>
+                    </div>
+                    <h3 class="feature-title">Multilingua</h3>
+                    <p class="feature-description">
+                        Interfaccia disponibile in italiano e inglese per un'esperienza utente ottimale.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">L'app in azione</h2>
+                <p class="section-subtitle">
+                    Scopri come Grill It ti aiuta a trovare il posto perfetto
+                </p>
+            </div>
+            <div class="screenshots-carousel">
+                <button class="carousel-navigation carousel-prev" aria-label="Slide precedente">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="carousel-navigation carousel-next" aria-label="Slide successivo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="carousel-auto-indicator">
+                    <div class="auto-play-dot"></div>
+                    Auto-play attivo
+                </div>
+                <div class="carousel-progress"></div>
+                <div class="carousel-container">
+                    <div class="screenshot-item active">
+                        <img src="img/home.jpg" alt="Schermata principale">
+                        <div class="screenshot-info">
+                            <h3>Mappa interattiva</h3>
+                            <p>Esplora tutti i luoghi per barbecue attraverso una mappa interattiva e intuitiva. Zoom, navigazione fluida e marker personalizzati per un'esperienza di ricerca ottimale.</p>
+                            <ul class="screenshot-features">
+                                <li>Visualizzazione in tempo reale</li>
+                                <li>Zoom e navigazione fluida</li>
+                                <li>Marker personalizzati</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-info">
+                            <h3>Filtri intelligenti</h3>
+                            <p>Sistema di filtri avanzato per trovare esattamente quello che cerchi. Filtra per prezzo, servizi disponibili, tipologia di area e molto altro ancora.</p>
+                            <ul class="screenshot-features">
+                                <li>Filtro per prezzo (gratis/a pagamento)</li>
+                                <li>Servizi disponibili (parcheggio, fontana, etc.)</li>
+                                <li>Raggio di ricerca personalizzabile</li>
+                            </ul>
+                        </div>
+                        <img src="img/home_filter.jpg" alt="Filtri di ricerca">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/location_details.jpg" alt="Dettagli location">
+                        <div class="screenshot-info">
+                            <h3>Informazioni complete</h3>
+                            <p>Ogni location ha una scheda dettagliata con tutte le informazioni necessarie per organizzare il barbecue perfetto.</p>
+                            <ul class="screenshot-features">
+                                <li>Dettagli sui servizi disponibili</li>
+                                <li>Informazioni su costi e orari</li>
+                                <li>Galleria fotografica</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-info">
+                            <h3>I tuoi preferiti</h3>
+                            <p>Salva i luoghi che preferisci per ritrovarli facilmente. Organizza le tue location preferite e pianifica i tuoi prossimi barbecue.</p>
+                            <ul class="screenshot-features">
+                                <li>Salvataggio offline</li>
+                                <li>Ricerca rapida nei preferiti</li>
+                                <li>Integrazione con la mappa</li>
+                            </ul>
+                        </div>
+                        <img src="img/favorites.jpg" alt="Lista preferiti">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sviluppato con tecnologie moderne</h2>
+                <p class="section-subtitle">
+                    Un progetto completo che dimostra competenze full-stack e attenzione ai dettagli
+                </p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-category" data-aos="fade-up">
+                    <div class="tech-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 22V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 7L12 12L2 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-title">Frontend Mobile</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Provider</span>
+                        <span class="tech-tag">Google Maps</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                            <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-title">Backend & Database</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Real-time API</span>
+                        <span class="tech-tag">Authentication</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 16V8A2 2 0 0 0 19 6H5A2 2 0 0 0 3 8V16A2 2 0 0 0 5 18H19A2 2 0 0 0 21 16Z" stroke="currentColor" stroke-width="2"/>
+                            <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-title">Funzionalità avanzate</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Geolocalizzazione</span>
+                        <span class="tech-tag">Mappe interattive</span>
+                        <span class="tech-tag">Offline Storage</span>
+                        <span class="tech-tag">Multilingua</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-highlights">
+                <div class="highlight-item" data-aos="zoom-in">
+                    <div class="highlight-number">100%</div>
+                    <div class="highlight-label">Flutter & Dart</div>
+                </div>
+                <div class="highlight-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="highlight-number">300+</div>
+                    <div class="highlight-label">Località</div>
+                </div>
+                <div class="highlight-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="highlight-number">20</div>
+                    <div class="highlight-label">Regioni coperte</div>
+                </div>
+                <div class="highlight-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="highlight-number">6+</div>
+                    <div class="highlight-label">Filtri</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2 class="download-title">
+                        Scarica <span>Grill It</span> ora
+                    </h2>
+                    <p class="download-description">
+                        Inizia subito a scoprire i migliori luoghi per barbecue in Italia. 
+                        L'app è completamente gratuita e non richiede registrazione.
+                    </p>
+                    <div class="download-features">
+                        <div class="download-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                            </svg>
+                            <span>Completamente gratuita</span>
+                        </div>
+                        <div class="download-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                            </svg>
+                            <span>Nessuna registrazione richiesta</span>
+                        </div>
+                        <div class="download-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                            </svg>
+                            <span>Community based</span>
+                        </div>
+                    </div>
+                    <div class="download-buttons">
+                        <a href="apk/Grill It.apk" class="btn btn-download" download>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16L7 11H10V4H14V11H17L12 16Z" fill="currentColor"/>
+                                <path d="M20 18H4V20H20V18Z" fill="currentColor"/>
+                            </svg>
+                            Scarica APK
+                            <span class="file-size">(~25 MB)</span>
+                        </a>
+                    </div>
+                    <p class="download-note">
+                        <strong>Nota:</strong> Attualmente disponibile solo per Android. 
+                        Per installare l'APK, abilita l'installazione da "Sorgenti sconosciute" nelle impostazioni del tuo dispositivo.
+                    </p>
+                </div>
+                <div class="download-image">
+                    <div class="phone-container">
+                        <img src="img/home.jpg" alt="Grill It App" class="phone-screen">
+                        <div class="download-animation">
+                            <div class="download-circle"></div>
+                            <div class="download-arrow">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 16L7 11H10V4H14V11H17L12 16Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="img/grill_it.svg" alt="Grill It Logo" class="footer-logo">
+                    <span class="footer-logo-text">Grill It</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#features">Funzionalità</a>
+                    <a href="#download">Download</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grill It. Ideato e realizzato da <a href="https://fpetranzan.me/" target="_blank">fpetranzan.me</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 14l5-5 5 5z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
